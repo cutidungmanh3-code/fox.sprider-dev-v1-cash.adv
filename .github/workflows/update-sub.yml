@@ -37,11 +37,11 @@ jobs:
               name = name.trim();
 
               name = name
-                .replace(/jp1|lxs1jp|lx-1jp/gi, "Japan")
+                .replace(/jp1|lxs1jp|lx-1jp|Japan/gi, "Japan")
                 .replace(/lxs2jp|jp2/gi, "Japan 2")
-                .replace(/lx-1sg|sg1/gi, "Singapore")
-                .replace(/lx-us1|us1/gi, "USA")
-                .replace(/gb-lx|gb1/gi, "UK");
+                .replace(/lx-1sg|sg1|Singapore/gi, "Singapore")
+                .replace(/lx-us1|us1|USA/gi, "USA")
+                .replace(/gb-lx|gb1|UK/gi, "UK");
 
               if (name.includes("Japan")) name = "🇯🇵 Japan";
               else if (name.includes("Singapore")) name = "🇸🇬 Singapore";
