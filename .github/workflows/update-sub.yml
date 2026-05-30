@@ -8,6 +8,8 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -29,5 +31,5 @@ jobs:
       - name: Commit & Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🔄 Update Subscription'
+          commit_message: '🔄 Update LiangXin Subscription'
           file_pattern: 'sub.txt'
